@@ -74,7 +74,7 @@ def update_picture(id):
     for picture in data:
         if picture["id"] == id:
             picture.update(data_in)
-            return jsonify(picture), 200
+            return jsonify(picture), 201
     return jsonify({"message": "Picture not found"}), 404
 
 ######################################################################
